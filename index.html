@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lappeenrannan kotisivut</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body { 
+        scroll-behavior: smooth; 
+      }
+
+      #backToTop { 
+        position: fixed; 
+        bottom: 30px; 
+        right: 30px; 
+        display: none; 
+      }
+
+      .bg-image {
+        background-image: url('https://www.lappeenrannanseurakunnat.fi/documents/658201/1983107/20220708_152%282%29.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 400px;
+      }
+
+      .gallery-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Lappeenranta</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#info">Tietoa</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Ota yhteyttä</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Заголовок -->
+    <header class="bg-image text-white d-flex flex-column justify-content-center align-items-center text-center p-5">
+      <h1 class="display-4">Tervetuloa Lappeenrantaan Kotisivulle</h1>
+      <p class="lead">Lappeenranta Etelä-Karjalan suurkaupunki Saimaan rannalla</p>
+    </header>
+
+    <!-- Инфо -->
+    <section id="info" class="container my-5">
+      <h2>Tietoa kaupungista</h2>
+      <p>Lappeenranta on Etelä-Karjalan suurin kaupunki, joka tunnetaan kauniista Saimaan järvimaisemista, historiallisesta linnoituksesta ja eläväisestä matkailuelämästä. Kaupunki tarjoaa monipuolisia kulttuuri- ja vapaa-ajan aktiviteetteja sekä erinomaiset mahdollisuudet ulkoiluun ympäri vuoden. Lappeenranta on myös tunnettu ystävällisestä ilmapiiristään ja kansainvälisyydestään.</p>
+    </section>
+
+    <!-- Карточки -->
+    <section id="sights" class="container my-5"> 
+      <h2 class="mb-4">Tunnettuja kohteita</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card">
+            <a href="satama.html" target="_blank">
+              <img src="https://cdn-datahub.visitfinland.com/images/64024470-90c5-11ec-9e6e-cd72eacf1e96-IMG_20210519_164735-01-01.jpeg?s=1920" class="card-img-top" alt="Satama" style="object-fit: cover;" width="300" height="200">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Satama</h5>
+              <p class="card-text">Kaunis satama-alue kahviloineen ja veneineen.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="hiekkalinna.html" target="_blank">
+              <img src="https://www.lakesaimaa.fi/wp-content/uploads/2022/03/02425f40-8fcb-11ec-9e6e-cd72eacf1e96-lappeenranta20sandcastle-1-443x375.jpeg" class="card-img-top" alt="Hiekkalinna" style="object-fit: cover;" width="300" height="200">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Hiekkalinna</h5>
+              <p class="card-text">Suomen suurin hiekkalinna nousee joka kesä.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="Linnoitus.html" target="_blank">
+              <img src="https://cdn-datahub.visitfinland.com/images/78d94e00-8fe6-11ec-9e6e-cd72eacf1e96-IMG_0272.JPG?s=1920" class="card-img-top" alt="Linnoitus" style="object-fit: cover;" width="300" height="200">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Linnoitus</h5>
+              <p class="card-text">Historiallinen linnoitusalue, taidegalleria ja kahviloita.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery" class="container my-5">
+      <h2 class="mb-4">Kuvagalleria</h2>
+      <div class="row g-3">
+        <div class="col-md-3">
+          <img src="https://www.discoveringfinland.com/wp-content/uploads/2013/03/zzzz-3-1304x800.jpg" class="img-fluid rounded gallery-img" alt="Gallery">
+        </div>
+        <div class="col-md-3">
+          <img src="https://www.discoveringfinland.com/wp-content/uploads/2013/03/zzzz1-3-1136x800.jpg" class="img-fluid rounded gallery-img" alt="Gallery">
+        </div>
+        <div class="col-md-3">
+          <img src="https://bestcaravan.fi/wp-content/uploads/2021/05/1199px-Lappeenrannan_linnoitus_2017_12.jpg" class="img-fluid rounded gallery-img" alt="Gallery">
+        </div>
+        <div class="col-md-3">
+          <img src="https://www.visit-plus.com/sites/default/files/images/hiekkalinna.jpg" class="img-fluid rounded gallery-img" alt="Gallery">
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакт -->
+    <section id="contact" class="container my-5">
+      <h2>Ota yhteyttä</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nimi</label>
+          <input type="text" class="form-control" id="name" placeholder="Etunimi Sukunimi">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Sähköposti</label>
+          <input type="email" class="form-control" id="email" placeholder="esimerkki@email.com">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Viesti</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Lähetä</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+      <p>© 2025 Lappeenranta-sivusto | Tekijä: Niko Myronov</p>
+    </footer>
+
+    <!-- Кнопка вверх -->
+    <button id="backToTop" class="btn btn-secondary">↑ Ylös</button>
+
+    <script>
+      const btn = document.getElementById('backToTop');
+      window.onscroll = function() {
+        if (document.documentElement.scrollTop > 200) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+      btn.onclick = function() {
+        document.documentElement.scrollTop = 0;
+      };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
